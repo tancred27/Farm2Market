@@ -1,0 +1,92 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="./static/assets1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./static/assets1/css/fontawesome-all.min.css">
+    <link rel="stylesheet" href="./static/assets1/css/style.css">
+
+    <title>profile</title>
+</head>
+
+
+
+<body>
+
+    <div id="home" class="container-fluid resume-container">
+
+        <!--  ************************* Container Starts Here ************************** -->
+          
+          <div class="container">
+              <div class="row">
+                  <div class="col-xl-10 col-lg-12 resume-box">
+                      <div class="row">
+                          <div class="col-lg-4 col-md-12 basic-profile">
+                            
+                            <div class="row no-margin">
+                                 <div class="col-lg-12 col-md-9 col-sm-9 ccol-12 baci-cc no-padding">
+                                     <div class="basic-detail no-padding"><br>
+                                           <h2>{{data['username']}}</h2>
+                                           <span >Consumer Account</span><br>
+                                           <a href = "./index.html"><bold>Continue</bold></a>                                      
+                                    </div>
+                                 </div>
+                            </div>
+                            
+                              
+                              
+                          </div>
+                          <div class="col-lg-8 col-md-12 detail-profile no-padding">
+                             
+                                <div class="tab-content" id="myTabContent">
+                                 
+                                  <!--  ************************* Home Tab Starts Here ************************** -->
+                                  <div class="tab-pane fade show active" id="home-1" role="tabpanel" aria-labelledby="home-tab">
+                
+                                      <div class="jumbo-address">
+                                         <div class="row">
+                                                  <div class="col-sm-6 no-padding">
+                                              
+                                                  <table class="addrss-list">
+                                                      <tr>
+                                                          <th>username</th>
+                                                          <td>{{data['username']}}</td>
+                                                      </tr>
+                                                          <th>password</th>
+                                                          <td>{{data['password']}}</td>
+                                                       </tr>
+                                                          <th>E-mail</th>
+                                                          <td>{{data['email']}}</td>
+                                                      </tr>
+                                                          <th>Date of birth</th>
+                                                          <td>{{data['dob']}}</td>
+                                                      </tr>
+                                                  </table>
+                                            
+                                          </div>
+                                         
+                                         </div>
+                                     
+                                      </div>
+                                      
+                                      
+                                      
+                                      
+                                      
+                                  </div>
+                                  
+                                   
+        </div>
+        <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+        <script src="./static/assets1/js/jquery-3.2.1.min.js"></script>
+        <script src="./static/assets1/js/popper.js"></script>
+        <script src="./static/assets1/js/bootstrap.min.js"></script>
+        <script src="./static/assets1/js/script.js"></script>
+</body>
+
+</html>
