@@ -1,6 +1,6 @@
 from flask import Flask, render_template, request, redirect, escape, url_for, session, Response
 import sqlite3
-import pyzbar.pyzbar as pyzbar
+import pyzbar as pyzbar
 import cv2
 import numpy
 obj=[]
@@ -81,6 +81,7 @@ data_base.close()
 def profileu():
     if request.method == 'POST':
         data = request.form.to_dict()
+        print(data)
         if len(data) == 5:
             session['username'] = data['username']
             data_base = sqlite3.connect('users.sqlite')
@@ -100,7 +101,7 @@ def profileu():
             cursor.close()
             data_base.close()
             return render_template('profileu.html', data = data)
-        session['username'] == data['username']
+        session['username'] = data['username']
         data_base = sqlite3.connect('users.sqlite')
         cursor = data_base.cursor()
         cursor.execute("SELECT * FROM users WHERE username = ?", (session['username'], ))
